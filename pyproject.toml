@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "voicebot-local-interface"
+version = "0.1.0"
+description = ""
+authors = ["Raphael Nguyen <n.raphael285@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydub = "^0.25.1"
+websockets = "^13.1"
+PyAudio = "^0.2.14"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
