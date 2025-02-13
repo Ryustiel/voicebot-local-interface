@@ -119,10 +119,6 @@ async def receive_audio(websocket, received_audio_data: io.BytesIO, stop_event):
                 channels=SERVER_AUDIO_N_CHANNELS       # Number of audio channels
             )
 
-            if first_bip:
-                first_bip = False
-                await asyncio.sleep(13) # Wait a couple secs secs upon receiving the first audio : AI delay
-                print("Done waiting")
             # Play the received audio immediately
             playback.play(received_audio_segment)
 
